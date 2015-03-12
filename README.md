@@ -12,6 +12,10 @@ https://olimex.wordpress.com/2014/07/21/how-to-create-bare-minimum-debian-wheezy
     docker build -t strictlybusiness/beaglebone-black-iojs .
     docker push strictlybusiness/beaglebone-black-iojs
 
+    # Update io.js version and push
+    docker tag strictlybusiness/beaglebone-black-iojs strictlybusiness/beaglebone-black-iojs:1.5.0
+    docker push strictlybusiness/beaglebone-black-iojs:1.5.0
+
 ## Use image
 
 Image is available on the Docker [registry](https://registry.hub.docker.com/u/strictlybusiness/beaglebone-black-iojs/).
